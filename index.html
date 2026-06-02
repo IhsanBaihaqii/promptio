@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Promptio adalah platform koleksi prompt AI premium untuk menghasilkan foto AI sinematik, realistis, estetik, profesional, dan viral."
+    />
+    <title>Promptio | Premium AI Photo Prompts</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header" data-header>
+      <nav class="nav shell" aria-label="Navigasi utama">
+        <a href="/home" class="brand" data-link aria-label="Promptio Home">
+          <span class="brand-mark">P</span>
+          <span class="brand-copy">
+            <strong>Promptio</strong>
+            <small>Premium AI Photo Prompts</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle icon-button" data-nav-toggle aria-label="Buka menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+
+        <div class="nav-panel" data-nav-panel>
+          <a href="/home" data-link>Home</a>
+          <a href="/prompt" data-link data-protected-link>Prompts</a>
+          <a href="/pricing" data-link>Pricing</a>
+          <a href="/profile" data-link data-protected-link>Profile</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="ghost-button" data-login-action>Login</button>
+          <a class="primary-button small" href="/pricing" data-link>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3l2.6 5.7 6.2.7-4.6 4.2 1.2 6.1L12 16.6 6.6 19.7l1.2-6.1-4.6-4.2 6.2-.7L12 3z" />
+            </svg>
+            Upgrade Pro
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app" class="app" tabindex="-1"></main>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Promptio",
+  "description": "Platform koleksi prompt AI berkualitas tinggi untuk membantu kreator menghasilkan foto AI yang sinematik, realistis, estetik, profesional, dan viral.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

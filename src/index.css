@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;650;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #5C54F1;
+  --color-primary-light: #7E78FA;
+  --color-primary-dark: #3F37C9;
+  --color-secondary: #9B4DFF;
+  --color-accent: #06B6D4;
+  
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+  --color-brand-bg: #0B0C10;
+  --color-brand-bg-soft: #14161E;
+  --color-brand-bg-card: #1A1D26;
+
+  --color-brand-text: #FFFFFF;
+  --color-brand-text-secondary: #CED4DA;
+  --color-brand-text-muted: #6C757D;
+
+  --color-brand-border: #2D313F;
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --shadow-flat-border: 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+:root {
+  --primary: #5C54F1;
+  --primary-light: #7E78FA;
+  --primary-dark: #3F37C9;
+  --secondary: #9B4DFF;
+  --accent: #06B6D4;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --bg: #0B0C10;
+  --bg-soft: #14161E;
+  --bg-card: #1A1D26;
+  --text: #FFFFFF;
+  --text-secondary: #CED4DA;
+  --text-muted: #6C757D;
+  --border: #2D313F;
+}
+
+/* Custom Base Styles for Premium Solid Vibe */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  user-select: none; /* Anti text-selection as requested by image protection and premium vibe */
+}
+
+/* Glassmorphism Classes with Solid high-contrast backing */
+.glass-panel {
+  background: #14161E;
+  border: 1px solid #2D313F;
+}
+
+.glass-navbar {
+  background: rgba(11, 12, 16, 0.95);
+  border-bottom: 1px solid #2D313F;
+}
+
+.glass-card {
+  background: #14161E;
+  border: 1px solid #2D313F;
+  transition: all 0.25s ease-out;
+}
+
+.glass-card:hover {
+  border-color: var(--primary);
+  background: #1A1D26;
+}
+
+/* Protective image styling */
+.protected-image-container {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.protected-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 10;
+  cursor: default;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #2D313F;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-element-delayed {
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 3s;
+}

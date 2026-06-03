@@ -1,22 +1,20 @@
-# Promptio
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-Static premium landing app for Promptio with solid dark/neon styling, routed pages, a login gate for `/prompt` and `/profile`, prompt search, copy actions, and image protection hooks.
+# Run and deploy your AI Studio app
 
-## Run locally
+This contains everything you need to run your app locally.
 
-```powershell
-node server.js
-```
+View your app in AI Studio: https://ai.studio/apps/f5131484-81fc-4692-9975-9ffd76585057
 
-Then open:
+## Run Locally
 
-```text
-http://localhost:4173/home
-```
+**Prerequisites:**  Node.js
 
-Demo login:
 
-```text
-creator@promptio.id
-promptio
-```
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
